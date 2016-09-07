@@ -27,4 +27,14 @@ describe('Reducer created via Redux Reducer Map', () => {
     expect(reducedState.state.value).to.be(1500)
     expect(reducedState.action.value).to.be(2500)
   })
+
+  it('throws an error by default if action type is not found', () => {
+    const UNKNOWN_ACTION_TYPE = 'UNKNOWN'
+    const usingUnknownActionType = () => {
+      createReducerViaMap({}, {})({}, { type: UNKNOWN_ACTION_TYPE })
+    }
+    expect(usingUnknownActionType).to.throwException((e) => {
+      expect(e.message).to.contain(UNKNOWN_ACTION_TYPE)
+    })
+  })
 })

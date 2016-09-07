@@ -10,7 +10,7 @@ var createReducerViaMap = function createReducerViaMap(map, initial) {
     } else if (map.hasOwnProperty(action.type)) {
       return map[action.type](state, action);
     } else {
-      return state;
+      throw new Error('Unknown action type ' + action.type);
     }
   };
 };
