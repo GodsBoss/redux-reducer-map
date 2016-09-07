@@ -4,7 +4,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var defaultonUnknownActionTypeHandler = function defaultonUnknownActionTypeHandler(state, action) {
-  throw new Error('Unknown action type ' + action.type);
+  var error = new Error('Unknown action type ' + action.type);
+  error.state = state;
+  error.action = action;
+  throw error;
 };
 
 var createReducerViaMap = function createReducerViaMap(map, initial) {

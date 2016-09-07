@@ -1,5 +1,8 @@
 const defaultonUnknownActionTypeHandler = (state, action) => {
-  throw new Error('Unknown action type ' + action.type)
+  const error = new Error('Unknown action type ' + action.type)
+  error.state = state
+  error.action = action
+  throw error
 }
 
 const createReducerViaMap = (map, initial, onUnknownActionType = defaultonUnknownActionTypeHandler) =>

@@ -33,13 +33,19 @@ describe('Reducer created via Redux Reducer Map', () => {
 
   it('throws an error by default if action type is not found', () => {
     const UNKNOWN_ACTION_TYPE = 'UNKNOWN'
+    const reducerMap = {}
+    const reduce = createReducerViaMap(reducerMap, EMPTY_STATE)
+    const state = { value: 'Some value' }
+    const action = { type: UNKNOWN_ACTION_TYPE }
+
     const usingUnknownActionType = () => {
-      const reducerMap = {}
-      const action = { type: UNKNOWN_ACTION_TYPE }
-      createReducerViaMap(reducerMap, EMPTY_STATE)(EMPTY_STATE, action)
+      reduce(state, action)
     }
+
     expect(usingUnknownActionType).to.throwException((e) => {
       expect(e.message).to.contain(UNKNOWN_ACTION_TYPE)
+      expect(e.state).to.eql(state)
+      expect(e.action).to.eql(action)
     })
   })
 
