@@ -1,0 +1,23 @@
+{
+  "name": "@godsboss/redux-reducer-map",
+  "version": "0.0.1",
+  "description": "Create a reducer from a map of (smaller) reducers.",
+  "main": "dist/redux-reducer-map.js",
+  "scripts": {
+    "build": "babel -d dist src",
+    "test": "mocha --compilers js:babel-core/register test"
+  },
+  "author": "Timo Reitz <godsboss@gmx.de> (https://github.com/godsboss)",
+  "keywords": [
+    "map",
+    "reducer",
+    "redux"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "mocha": "^3.0.2"
+  }
+}
