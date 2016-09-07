@@ -1,11 +1,15 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var createReducerViaMap = function createReducerViaMap(map) {
+var createReducerViaMap = function createReducerViaMap(map, initial) {
   return function (state, action) {
-    return state;
+    if (typeof state === 'undefined') {
+      return initial;
+    } else {
+      return state;
+    }
   };
 };
 
