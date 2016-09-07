@@ -16,4 +16,6 @@ const createReducerViaMap = (map, initial, onUnknownActionType = defaultOnUnknow
     }
   }
 
+createReducerViaMap.justReturnState = (state, action) => state
+
 export default createReducerViaMap

@@ -23,4 +23,8 @@ var createReducerViaMap = function createReducerViaMap(map, initial) {
   };
 };
 
+createReducerViaMap.justReturnState = function (state, action) {
+  return state;
+};
+
 exports.default = createReducerViaMap;
