@@ -42,4 +42,22 @@ describe('Reducer created via Redux Reducer Map', () => {
       expect(e.message).to.contain(UNKNOWN_ACTION_TYPE)
     })
   })
+
+  it('allows overriding default error handling behaviour on unknown action types', () => {
+    const UNKNOWN_ACTION_TYPE = 'UNKNOWN'
+    const reducerMap = {}
+    const customErrorHandler = (state, action) => (
+      {
+        state: state,
+        action: action
+      }
+    )
+    const reduce = createReducerViaMap(reducerMap, EMPTY_STATE, customErrorHandler)
+    const state = { value: 42 }
+    const action = { type: UNKNOWN_ACTION_TYPE, value: 666 }
+    const reducedState = reduce(state, action)
+
+    expect(reducedState.state).to.eql(state)
+    expect(reducedState.action).to.eql(action)
+  })
 })
