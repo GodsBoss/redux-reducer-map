@@ -121,3 +121,13 @@ Running the tests
 npm install
 npm test
 ```
+
+Development
+===========
+
+Tests can be found in `test`. Pull requests without accompanying tests will be
+rejected.
+
+The library source code is inside the `src` directory. It is then compiled
+via `npm run-script build` (`npm install` beforehand is needed) into the `dist`
+folder.
