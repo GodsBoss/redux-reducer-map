@@ -113,3 +113,11 @@ There is a convenience function which just returns the state:
 ```javascript
 const store = createStore(createMapReducer(reducerMap, initialState, createMapReducer.justReturnState))
 ```
+
+Running the tests
+=================
+
+```sh
+npm install
+npm test
+```
