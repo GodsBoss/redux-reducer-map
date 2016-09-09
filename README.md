@@ -4,6 +4,8 @@
 [![wercker status](https://app.wercker.com/status/e55c5f53008a576767756aec6da776e4/m/master "wercker status")](https://app.wercker.com/project/byKey/e55c5f53008a576767756aec6da776e4)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GodsBoss/redux-reducer-map/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GodsBoss/redux-reducer-map/?branch=master)
 [![Build Status](https://snap-ci.com/GodsBoss/redux-reducer-map/branch/master/build_image)](https://snap-ci.com/GodsBoss/redux-reducer-map/branch/master)
+[![Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map)
+[![Dev Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/dev-status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map?type=dev)
 
 About
 =====
