@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/GodsBoss/redux-reducer-map.svg?branch=master)](https://travis-ci.org/GodsBoss/redux-reducer-map)
+[![Build Status](https://semaphoreci.com/api/v1/GodsBoss/redux-reducer-map/branches/master/badge.svg)](https://semaphoreci.com/GodsBoss/redux-reducer-map)
 
 About
 =====
