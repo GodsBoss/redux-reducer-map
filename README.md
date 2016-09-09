@@ -6,6 +6,7 @@
 [![Build Status](https://snap-ci.com/GodsBoss/redux-reducer-map/branch/master/build_image)](https://snap-ci.com/GodsBoss/redux-reducer-map/branch/master)
 [![Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map)
 [![Dev Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/dev-status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map?type=dev)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/46f4d46f05664a09982fd59d26febc60)](https://www.codacy.com/app/godsboss/redux-reducer-map?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GodsBoss/redux-reducer-map&amp;utm_campaign=Badge_Grade)
 
 About
 =====
