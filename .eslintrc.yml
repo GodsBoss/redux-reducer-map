@@ -1,6 +1,5 @@
 ecmaFeatures:
   modules: true
-  jsx: true
 
 parserOptions:
   sourceType: module
