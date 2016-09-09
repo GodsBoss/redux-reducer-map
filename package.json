@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "babel -d dist src",
+    "lint": "eslint src test",
     "test": "mocha --compilers js:babel-core/register test"
   },
   "author": "Timo Reitz <godsboss@gmx.de> (https://github.com/godsboss)",
