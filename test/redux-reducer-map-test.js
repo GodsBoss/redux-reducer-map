@@ -22,13 +22,15 @@ describe('Reducer created via Redux Reducer Map', () => {
       UNUSED: (state, action) => ({ reducer: 'UNUSED'})
     }
     const reduce = createReducerViaMap(reducerMap, EMPTY_STATE)
-    const state = { value: 1500 }
-    const action = { type: 'USED', value: 2500 }
+    const STATE_VALUE = 1500
+    const ACTION_VALUE = 2500
+    const state = { value: STATE_VALUE }
+    const action = { type: 'USED', value: ACTION_VALUE }
     const reducedState = reduce(state, action)
 
     expect(reducedState.reducer).to.be('USED')
-    expect(reducedState.state.value).to.be(1500)
-    expect(reducedState.action.value).to.be(2500)
+    expect(reducedState.state.value).to.be(STATE_VALUE)
+    expect(reducedState.action.value).to.be(ACTION_VALUE)
   })
 
   it('throws an error by default if action type is not found', () => {
