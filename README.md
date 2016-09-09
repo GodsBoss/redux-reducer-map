@@ -7,6 +7,9 @@
 [![Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map)
 [![Dev Dependency Status](https://david-dm.org/GodsBoss/redux-reducer-map/dev-status.svg)](https://david-dm.org/GodsBoss/redux-reducer-map?type=dev)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/46f4d46f05664a09982fd59d26febc60)](https://www.codacy.com/app/godsboss/redux-reducer-map?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=GodsBoss/redux-reducer-map&amp;utm_campaign=Badge_Grade)
+[![Code Climate](https://codeclimate.com/github/GodsBoss/redux-reducer-map/badges/gpa.svg)](https://codeclimate.com/github/GodsBoss/redux-reducer-map)
+[![Test Coverage](https://codeclimate.com/github/GodsBoss/redux-reducer-map/badges/coverage.svg)](https://codeclimate.com/github/GodsBoss/redux-reducer-map/coverage)
+[![Issue Count](https://codeclimate.com/github/GodsBoss/redux-reducer-map/badges/issue_count.svg)](https://codeclimate.com/github/GodsBoss/redux-reducer-map)
 
 About
 =====
