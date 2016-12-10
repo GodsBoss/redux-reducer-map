@@ -1,6 +1,6 @@
 {
   "name": "@godsboss/redux-reducer-map",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create a reducer from a map of (smaller) reducers.",
   "main": "dist/redux-reducer-map.js",
   "repository": {

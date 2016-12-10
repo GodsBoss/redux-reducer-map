@@ -17,6 +17,8 @@ var createReducerViaMap = function createReducerViaMap(map, initial) {
       return initial;
     } else if (map.hasOwnProperty(action.type)) {
       return map[action.type](state, action);
+    } else if (action.type === '@@redux/INIT') {
+      return initial;
     } else {
       return onUnknownActionType(state, action);
     }

@@ -80,4 +80,26 @@ describe('Reducer created via Redux Reducer Map', () => {
 
     expect(reducedState).to.eql(state)
   })
+
+  it("returns the initial state when given redux's init action", () => {
+    const action = { type: '@@redux/INIT' }
+    const reducerMap = {}
+    const initialState = { value: 666 }
+    const reduce = createReducerViaMap(reducerMap, initialState)
+    const reducedState = reduce(EMPTY_STATE, action)
+
+    expect(reducedState).to.eql(initialState)
+  })
+
+  it("lets the user override the reducer for redux's init action", () => {
+    const action = { type: '@@redux/INIT' }
+    const reducerMap = {
+      '@@redux/INIT': (state, action) => ({ originalState: state, action })
+    }
+    const reduce = createReducerViaMap(reducerMap, EMPTY_STATE)
+    const reducedState = reduce(EMPTY_STATE, action)
+
+    expect(reducedState.action).to.eql(action)
+    expect(reducedState.originalState).to.eql(EMPTY_STATE)
+  })
 })
