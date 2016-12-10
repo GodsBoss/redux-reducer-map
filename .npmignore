@@ -1,0 +1,7 @@
+/.codeclimate.yml
+/.eslintignore
+/.eslintrc.yml
+/src
+/test
+/.travis.yml
+/wercker.yml
