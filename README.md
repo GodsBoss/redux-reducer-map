@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/GodsBoss/redux-reducer-map.svg?branch=master)](https://travis-ci.org/GodsBoss/redux-reducer-map)
-[![Build Status](https://semaphoreci.com/api/v1/GodsBoss/redux-reducer-map/branches/master/badge.svg)](https://semaphoreci.com/GodsBoss/redux-reducer-map)
+[![Build Status](https://semaphoreci.com/api/v1/godsboss/redux-reducer-map/branches/master/badge.svg)](https://semaphoreci.com/godsboss/redux-reducer-map)
 [![CircleCI](https://circleci.com/gh/GodsBoss/redux-reducer-map/tree/master.svg?style=svg)](https://circleci.com/gh/GodsBoss/redux-reducer-map/tree/master)
 [![wercker status](https://app.wercker.com/status/e55c5f53008a576767756aec6da776e4/m/master "wercker status")](https://app.wercker.com/project/byKey/e55c5f53008a576767756aec6da776e4)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GodsBoss/redux-reducer-map/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GodsBoss/redux-reducer-map/?branch=master)
